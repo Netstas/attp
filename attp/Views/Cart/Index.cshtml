@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="cart">
+    <div class="cart-banner">
+        <div class="container">
+            <div class="position-absolute bottom-0">
+                <h1 class="cart-title text-white">Giỏ hàng</h1>
+                <nav style="--bs-breadcrumb-divider: '>'; ;" aria-label="breadcrumb">
+                    <ol class="breadcrumb align-items-center">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <img src="~/logo/logo_2.svg" />
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Giỏ hàng</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="cart-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="cart-left">
+                        <div class="cart-top">
+                            <h4 class="cart-title">
+                                Thông tin giao hàng
+                            </h4>
+                            <div class="cart-question d-flex">
+                                <p class="cart-question-dow">
+                                    Bạn đã có tài khoản?
+                                </p>
+                                <p class="cart-question-login">
+                                    Đăng nhập
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-from">
+                            <form class="cart-from-content">
+                                <div class="col-12 mb-3">
+                                    <input type="text" placeholder="Họ và Tên" class="cart-from-fullname cart-from-input" />
+                                </div>
+                                <div class="col-12 d-flex mb-3 gap-3">
+                                    <div class="w-75">
+                                        <input type="text" placeholder="Email" class="cart-from-email cart-from-input" />
+                                    </div>
+                                    <div class="">
+                                        <input type="text" placeholder="Số điện thoại" class="cart-from-phone cart-from-input" />
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mb-5 gap-4">
+                                    <div class="cart-select">
+                                        <label class="cart-label">Tỉnh/Thành</label>
+                                        <select class="from-select">
+                                            <option>Chọn tỉnh / thành</option>
+                                        </select>
+                                    </div>
+                                    <div class="cart-select">
+                                        <label class="cart-label">Quận/Thành</label>
+                                        <select class="from-select">
+                                            <option>Chọn quận / thành</option>
+                                        </select>
+                                    </div>
+                                    <div class="cart-select">
+                                        <label class="cart-label">Phường/Xã</label>
+                                        <select class="from-select">
+                                            <option>Chọn phường /xã</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cart-from-btn">
+                                        <button class="cart-from-completed"> Hoàn tất đơn hàng thanh toán</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 bgc">
+                    <div class="cart-product-information">
+                        <div class="cart-product-information-number">
+                            <table class="cart-border">
+                                <tbody class="border-0">
+                                    <tr class=" border-0">
+                                        <td class="cart-product-td">
+                                            <div class="cart-product-img position-relative">
+                                                <span class="cart-product-numbers">1</span>
+                                                <img src="~/product/product-1.svg" class="cart-prdocut-photo" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-product-names">
+                                                <div class="cart-product-name">
+                                                    <a asp-action="Index" asp-controller="ProductDetails" class="text-black text-decoration-none">
+                                                        Tinh Chất Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance sdfsdfasdfasdfasdfasd
+                                                    </a>
+                                                </div>
+                                                <div class="cart-product">
+                                                    Hộp 20 gói
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="cart-product-price">
+                                                7,000,000₫
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="hr" />
+                        <div class="cart-total-money">
+                            <div class="col-12 d-flex justify-content-between">
+                                <div class="cart-total-money-text">
+                                    Tổng tiền
+                                </div>
+                                <div class="cart-total-money-price">
+                                    14,190,000₫
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

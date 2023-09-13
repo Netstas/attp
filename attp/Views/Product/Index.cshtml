@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="product">
+    <div class="product-banner">
+        <div class="container">
+            <div class="position-absolute bottom-0">
+                <h1 class="product-banner-title text-white">Sản phẩm</h1>
+                <nav style="--bs-breadcrumb-divider: '>'; ;" aria-label="breadcrumb">
+                    <ol class="breadcrumb align-items-center">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <img src="~/logo/logo_2.svg" />
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Sản phẩm</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-3">
+                <div class="product-filter">
+                    <h3 class="product-filter-title">Bộ lọc sản phẩm</h3>
+                    <form>
+                        <div class="form-groud d-flex">
+                            <input type="text" class="form-control product-form" placeholder="Tìm kiếm sản phẩm" />
+                            <button class="product-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <h3 class="product-filter-title mt-4">Sản phẩm</h3>
+                    <div class="d-flex flex-column">
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios1">
+                                Tất cả sản phẩm
+                            </label>
+                        </div>
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios2">
+                                Sản phẩm bán chạy
+                            </label>
+                        </div>
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios3">
+                                Sản phẩm khuyến mãi
+                            </label>
+                        </div>
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios4" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios4">
+                                Sâm
+                            </label>
+                        </div>
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios5" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios5">
+                                Tranh đá quý
+                            </label>
+                        </div>
+                        <div class="form-check product-check position-relative p-0">
+                            <input class="custom-radio form-check-input d-none" type="radio" name="exampleRadios" id="exampleRadios6" value="option1" checked>
+                            <label class="custom-label form-check-label" for="exampleRadios6">
+                                Rượu
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="d-flex flex-wrap">
+                    <div class="home-share-resize product-box">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize product-box">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize product-box">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize product-box">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link page-link-product product-prev" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link page-link-product product-number active">1</a></li> <!-- Thêm lớp "active" vào đây -->
+                        <li class="page-item"><a class="page-link page-link-product product-number" >2</a></li>
+                        <li class="page-item"><a class="page-link page-link-product product-number" >3</a></li>
+                        <li class="page-item">
+                            <a class="page-link page-link-product product-next" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+<script src="~/js/product.js"></script>

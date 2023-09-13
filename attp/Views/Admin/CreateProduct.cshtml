@@ -1,0 +1,83 @@
+﻿@model attp.Models.Product
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/css/elfinder.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/css/theme.min.css" />
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="p-5">
+
+    <h4>Thêm sản phẩm mới</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="CreateProduct" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ProductName" class="control-label"></label>
+                    <input asp-for="ProductName" class="form-control" />
+                    <span asp-validation-for="ProductName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="upload__box">
+                        <div class="upload__btn-box">
+                            <label asp-for="image" class="upload__btn">
+                                <p class="m-0">Ảnh sản phẩm</p>
+                                <input type="file" asp-for="image" multiple="" data-max_length="20" class="upload__inputfile">
+                            </label>
+                        </div>
+                        <div class="upload__img-wrap"></div>
+                    </div>
+                    <span asp-validation-for="image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="quantity" class="control-label"></label>
+                    <input asp-for="quantity" class="form-control" />
+                    <span asp-validation-for="quantity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="discount" class="control-label"></label>
+                    <input asp-for="discount" type="number" class="form-control" />
+                    <span asp-validation-for="discount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="productcode" class="control-label"></label>
+                    <input asp-for="productcode" class="form-control" />
+                    <span asp-validation-for="productcode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProductDescription" class="control-label"></label>
+                    <textarea asp-for="ProductDescription" class="bg-white"></textarea>
+                    <span asp-validation-for="ProductDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProductCategoryId" class="control-label"></label>
+                    <select asp-for="ProductCategoryId" asp-items="@(new SelectList(ViewBag.ProductCategories, "Id", "CategoryName"))" class="form-control">
+                        <option value="">Chọn danh mục</option>
+                    </select>
+                </div>
+              
+                <div class="form-group">
+                    <input type="submit" value="Thêm mới" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Product">Quay lại</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/js/elfinder.min.js"></script>
+
+<script src="~/js/adminproduct.js"></script>

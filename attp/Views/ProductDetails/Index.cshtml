@@ -1,0 +1,541 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+<div class="product-details">
+    <div class="product-details-banner">
+        <div class="container">
+            <div class="position-absolute bottom-0">
+                <h1 class="product-banner-title text-white">Sản phẩm</h1>
+                <nav style="--bs-breadcrumb-divider: '>'; ;" aria-label="breadcrumb">
+                    <ol class="breadcrumb align-items-center">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <img src="~/logo/logo_2.svg" />
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Sản phẩm</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="product-details-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div id="page">
+                        <div class="row d-flex">
+                            <div class="product-details-page">
+                                <div>
+                                    <img src="~/product/product-1.svg" class="product-details-page-item" />
+                                </div>
+                            </div>
+                            <div class="slider slider-single">
+                                <div>
+                                    <img src="~/product/product-1.svg" class="product-details-show" />
+                                </div>
+                                <div>
+                                    <img src="~/product/product-2.svg" class="product-details-show" />
+                                </div>
+                                <div>
+                                    <img src="~/product/product-3.svg" class="product-details-show" />
+                                </div>
+                                <div>
+                                    <img src="~/product/product-4.svg" class="product-details-show" />
+                                </div>
+                                <div>
+                                    <img src="~/product/product-5.svg" class="product-details-show" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h1 class="product-details-title">
+                        Hộp 20 Gói Tinh Chất Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance
+                    </h1>
+                    <div class="product-details-price">
+                        <h3 class="product-details-sale">
+                            750.000 ₫
+                        </h3>
+                        <div class="product-details-cost">
+                            <del> 1.750.000 đ</del>
+                            <span> - 50%</span>
+                        </div>
+                    </div>
+                    <p class="product-details-describe">
+                        - Nước hồng sâm Hàn Quốc KGC với thành phần chính gồm tinh chất hồng sâm Hàn Quốc cô đặc kết hợp với chiết xuất cam thảo, keo ong, chiết xuất sirup gừng mang lại hương vị tuyệt vời. Là sản phẩm tiêu biểu của Cheong Kwan Jang, ra đời bởi sự kết hợp của phương pháp truyền thống có từ 100 năm và khoa học hiện đại.
+                        <br /> - Tinh chất hồng sâm pha sẵn Everytime Balance giúp cải thiện hệ miễn dịch, nâng cao sức khỏe và tinh thần cho người sử dụng.
+                        <br /> - Ngoài ra KGC Extract Everytime Balance sản xuất dưới dạng gói (10ml/gói) nên thật dễ dàng sử dụng, bỏ vào túi du lịch và đồng hành cùng bạn bất kỳ đâu.
+                        <br />- Xuất xứ: Hàn Quốc.
+                        <br />- Ngày sản xuất: In trên bao bì sản phẩm.
+                        <br />- Hạn sử dụng: 2 năm kể từ ngày sản xuất.
+                        <br />- Quy cách đóng gói: Hộp 10ml x 20 gói.
+                    </p>
+                    <form class="product-details-from-number">
+                        <div class="d-flex">
+                            <label class="label-number"><strong> Số lượng: </strong></label>
+                            <div class="product-details-from-group">
+                                <input type="button" value="-" id="decrement">
+                                <input type="text" value="1" id="quantity">
+                                <input type="button" value="+" id="increment">
+                            </div>
+                            <div class="product-details-from-quantity">( 10 sản phẩm có sẵn)</div>
+                        </div>
+                        <div class="product-details-from-group-btn">
+                            <button class="product-details-btn buy">
+                                <img src="~/icon/Vector1.svg" /> Mua hàng
+                            </button>
+                            <button class="product-details-btn addcart">
+                                <img src="~/icon/vector.svg" /> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </form>
+                    <div class="product-details-share d-flex gap-4 align-items-center">
+                        <div class="product-details-texte">
+                            Chia sẻ :
+                        </div>
+                        <div class="product-details-icon d-flex gap-4">
+                            <img src="~/iconsocialnetwork/social-media (4) 1.svg" />
+                            <img src="~/iconsocialnetwork/google-plus1.svg" />
+                            <img src="~/iconsocialnetwork/twitter 1.svg" />
+                            <img src="~/iconsocialnetwork/social-media (5) 1.svg" />
+                            <img src="~/iconsocialnetwork/logotype 1.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-details-comment-details">
+        <div class="container">
+            <div class="row">
+                <div class="tabs">
+                    <div class="tab-item active">
+                        CHI TIẾT SẢN PHẨM
+                    </div>
+                    <div class="tab-item">
+                        bình luận
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active">
+                        <p class="product-details-describe">
+                            - Nước hồng sâm Hàn Quốc KGC với thành phần chính gồm tinh chất hồng sâm Hàn Quốc cô đặc kết hợp với chiết xuất cam thảo, keo ong, chiết xuất sirup gừng mang lại hương vị tuyệt vời. Là sản phẩm tiêu biểu của Cheong Kwan Jang, ra đời bởi sự kết hợp của phương pháp truyền thống có từ 100 năm và khoa học hiện đại.
+                            <br /> - Tinh chất hồng sâm pha sẵn Everytime Balance giúp cải thiện hệ miễn dịch, nâng cao sức khỏe và tinh thần cho người sử dụng.
+                            <br /> - Ngoài ra KGC Extract Everytime Balance sản xuất dưới dạng gói (10ml/gói) nên thật dễ dàng sử dụng, bỏ vào túi du lịch và đồng hành cùng bạn bất kỳ đâu.
+                            <br />- Xuất xứ: Hàn Quốc.
+                            <br />- Ngày sản xuất: In trên bao bì sản phẩm.
+                            <br />- Hạn sử dụng: 2 năm kể từ ngày sản xuất.
+                            <br />- Quy cách đóng gói: Hộp 10ml x 20 gói.
+                        </p>
+                    </div>
+                    <div class="tab-pane">
+                        <h2>No</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="product-details-evaluate">
+                <h2 class="product-details-evaluate-title">
+                    Đánh Giá - Nhận Xét Từ Khách Hàng
+                </h2>
+                <div class="product-details-evaluate-general-comments">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="product-details-evaluate-star">
+                                <div class="product-details-evaluate-star-top d-flex">
+                                    <div class="product-details-evaluate-star-top-text">
+                                        4.7
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-comment">
+                                        <div>
+                                            <img src="~/icon/star.svg" class="product-details-evaluate-star-top-comment-st" />
+                                            <img src="~/icon/star.svg" class="product-details-evaluate-star-top-comment-st" />
+                                            <img src="~/icon/star.svg" class="product-details-evaluate-star-top-comment-st" />
+                                            <img src="~/icon/star.svg" class="product-details-evaluate-star-top-comment-st" />
+                                            <img src="~/icon/star.svg" class="product-details-evaluate-star-top-comment-st" />
+                                        </div>
+                                        <div class="product-details-evaluate-star-top-comment-numbers">
+                                            2839 nhận xét
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details-evaluate-star-top-progress d-flex align-items-center">
+                                    <div>
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                    </div>
+                                    <div class="progress progress-bars">
+                                        <div class="progress-bar product-details-evaluate-star-top-progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-progress-percent">
+                                        6666
+                                    </div>
+                                </div>
+                                <div class="product-details-evaluate-star-top-progress d-flex align-items-center">
+                                    <div>
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                    </div>
+                                    <div class="progress progress-bars">
+                                        <div class="progress-bar product-details-evaluate-star-top-progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-progress-percent">
+                                        6666
+                                    </div>
+                                </div>
+                                <div class="product-details-evaluate-star-top-progress d-flex align-items-center">
+                                    <div>
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                    </div>
+                                    <div class="progress progress-bars">
+                                        <div class="progress-bar product-details-evaluate-star-top-progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-progress-percent">
+                                        6666
+                                    </div>
+                                </div>
+                                <div class="product-details-evaluate-star-top-progress d-flex align-items-center">
+                                    <div>
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                    </div>
+                                    <div class="progress progress-bars">
+                                        <div class="progress-bar product-details-evaluate-star-top-progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-progress-percent">
+                                        6666
+                                    </div>
+                                </div>
+                                <div class="product-details-evaluate-star-top-progress d-flex align-items-center">
+                                    <div>
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                        <img src="~/icon/star.svg" class="product-details-evaluate-star-top-progress-evs" />
+                                    </div>
+                                    <div class="progress progress-bars">
+                                        <div class="progress-bar product-details-evaluate-star-top-progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="product-details-evaluate-star-top-progress-percent">
+                                        6666
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="product-details-evaluate-photo">
+                                <h5 class="product-details-evaluate-photo-text">
+                                    Tất cả hình ảnh (625)
+                                </h5>
+                                <div class="product-details-evaluate-photo-cmt">
+                                    <div class="box-img d-flex">
+                                        <div class="product-details-evaluate-photo-cmt-box">
+                                            <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                        </div>
+                                        <div class="product-details-evaluate-photo-cmt-box">
+                                            <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                        </div>
+                                        <div class="product-details-evaluate-photo-cmt-box">
+                                            <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                        </div>
+                                        <div class="product-details-evaluate-photo-cmt-box">
+                                            <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                        </div>
+                                        <div class="product-details-evaluate-photo-cmt-box">
+                                            <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                        </div>
+                                        <div class="product-details-evaluate-photo-cmt-box box-number position-relative">
+                                            <div class="product-details-evaluate-photo-cmt-box-number">
+                                                +619
+                                            </div>
+                                            <a href="#">
+                                                <img src="~/cmt/cmt1.svg" class="product-details-evaluate-photo-img" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center box-btn">
+                                        <div class="product-details-evaluate-photo-filter">
+                                            Lọc xem theo:
+                                        </div>
+                                        <div class="product-details-evaluate-photo-select">
+                                            <button class="product-details-evaluate-photo-latest product-details-btn-cmt active-btn"><img src="~/icon/icon1.svg" /> Mới nhất</button>
+                                            <button class="product-details-evaluate-photo-picture product-details-btn-cmt"> Có hình ảnh</button>
+                                            <button class="product-details-evaluate-photo-bought product-details-btn-cmt"> Đã mua hàng</button>
+                                            <button class="product-details-evaluate-photo-five product-details-btn-cmt"> 5 <i class="fa-solid fa-star"></i></button>
+                                            <button class="product-details-evaluate-photo-four product-details-btn-cmt"> 4 <i class="fa-regular fa-star"></i></button>
+                                            <button class="product-details-evaluate-photo-three product-details-btn-cmt"> 3 <i class="fa-regular fa-star"></i></button>
+                                            <button class="product-details-evaluate-photo-tow product-details-btn-cmt"> 2 <i class="fa-regular fa-star"></i></button>
+                                            <button class="product-details-evaluate-photo-one product-details-btn-cmt"> 1 <i class="fa-regular fa-star"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details-evaluate-photo-receive-user-reviews">
+                        <div class="product-details-evaluate-photo-receive-user">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="product-details-evaluate-photo-receive-user-info d-flex">
+                                        <div class="product-details-evaluate-photo-receive-user-avatar">
+                                            <img src="~/avatar/avatar.jpg" class="product-details-evaluate-photo-receive-user-avatar-photo" />
+                                        </div>
+                                        <div>
+                                            <div class="product-details-evaluate-photo-receive-user-avatar-name">
+                                                Trần Duy Khánh
+                                            </div>
+                                            <div class="product-details-evaluate-photo-receive-user-avatar-join">
+                                                Đã tham gia 9 năm
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details-evaluate-photo-receive-total-number-reviews">
+                                        <div class="product-details-evaluate-photo-receive-written d-flex gap-2">
+                                            <img src="~/icon/union.svg" class="product-details-evaluate-photo-receive-icon" />
+                                            <div class="product-details-evaluate-photo-receive-texts">Đã viết:</div>
+                                            <div class="product-details-evaluate-photo-receive-total">
+                                                <strong>
+                                                    21 đánh giá
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <div class="product-details-evaluate-photo-receive-like d-flex gap-2">
+                                            <img src="~/icon/union.svg" class="product-details-evaluate-photo-receive-icon" />
+                                            <div class="product-details-evaluate-photo-receive-texts">Đã nhận:</div>
+                                            <div class="product-details-evaluate-photo-receive-total">
+                                                <strong>
+                                                    79 lượt cảm ơn
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="product-details-evaluate-photo-receive-reviews">
+                                        <div class="product-details-evaluate-photo-receive-reviews-top">
+                                            <div>
+                                                <div class="d-flex gap-3">
+                                                    <div class="product-details-evaluate-photo-receive-reviews-star pb-2">
+                                                        <img src="~/icon/star.svg" />
+                                                        <img src="~/icon/star.svg" />
+                                                        <img src="~/icon/star.svg" />
+                                                        <img src="~/icon/star.svg" />
+                                                        <img src="~/icon/star.svg" />
+                                                    </div>
+                                                    <div class="product-details-evaluate-photo-receive-reviews-star-text">
+                                                        <strong>
+                                                            Cực kì hài lòng
+                                                        </strong>
+                                                    </div>
+                                                </div>
+                                                <div class="product-details-evaluate-photo-receive-reviews-star-subtract">
+                                                    <img src="~/icon/subtract.svg" /> Đã mua hàng
+                                                </div>
+                                                <div>
+                                                    <p class="product-details-evaluate-photo-receive-reviews-text-p">
+                                                        Sản phẩm rất chất lượng. Phải nói là cực kỳ vi diệu đối với 1 lọ có kích thước nhỏ như vậy,
+                                                        sản phẩm này thực sự đã cứu dỗi cuộc đời mình vào mùa đông (mình bị xoang rất nặng), mình sử
+                                                        dụng thì có tác dụng ngay sau khoảng 15 phút và không bị tái lại khi đi ra ngoài trời lạnh.
+                                                    </p>
+                                                    <div class="product-details-evaluate-photo-receive-reviews-img">
+                                                        <img src="~/icon/rectangle1.svg" />
+                                                        <img src="~/icon/rectangle1.svg" />
+                                                        <img src="~/icon/rectangle1.svg" />
+                                                        <img src="~/icon/rectangle1.svg" />
+                                                        <img src="~/icon/rectangle1.svg" />
+                                                    </div>
+                                                    <div class="product-details-evaluate-photo-receive-reviews-time">
+                                                        Đánh giá vào 5 phút trước ·23/08/2023
+                                                    </div>
+                                                </div>
+                                                <div class="product-details-evaluate-photo-receive-reviews-btn">
+                                                    <button class="product-details-evaluate-photo-receive-reviews-btn-link active-btns">
+                                                        <img src="~/icon/unionlike.svg" />
+                                                        Hữu ích (15)
+                                                    </button>
+                                                    <button class="product-details-evaluate-photo-receive-reviews-btn-link">
+                                                        Bình luận
+                                                    </button>
+                                                    <button class="product-details-evaluate-photo-receive-reviews-btn-link">
+                                                        Chia sẻ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-details-evaluate-photo-receive-reviews-admin-cmt d-flex">
+                                                <div class="product-details-evaluate-photo-receive-reviews-admin-avatar">
+                                                    <img src="~/icon/adminavatar.svg" />
+                                                </div>
+                                                <div class="product-details-evaluate-photo-receive-reviews-admin-cmt-text">
+                                                    <div class="product-details-evaluate-photo-receive-reviews-admin-cmt-text-info d-flex align-items-center">
+                                                        <strong>An toàn thực phẩm</strong>
+                                                        <img src="~/icon/subtract1.svg" />
+                                                        <div class="product-details-evaluate-photo-receive-reviews-admin-cmt-time">
+                                                            1phút trước · 23/08/2023
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details-evaluate-photo-receive-reviews-admin-cmt-contentt">
+                                                        Chào bạn, rất vui khi bạn hài lòng với sản phẩm và dịch vụ của Đông Trùng Hạ Thảo Tashi.
+                                                        Trong quá trình sử dụng nếu bạn cần bất kỳ hỗ trợ kỹ thuật sản phẩm vui lòng liên hệ
+                                                        hotline 012.3456.7891 để gặp bộ phận kỹ thuật. Hy vọng bạn luôn ủng hộ sản phẩm của Đông
+                                                        Trùng Hạ Thảo Tashi nhé.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-details-evaluate-photo-receive-reviews-see-more d-flex align-items-center">
+                                                <img src="~/icon/seemore.svg" class="product-details-evaluate-photo-receive-reviews-see-more-icon" />
+                                                <div class="product-details-evaluate-photo-receive-reviews-see-more-text">
+                                                    Xem thêm 6 câu trả lời
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mt-4 mb-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-selling home-share promotion">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-between align-items-center pb-3 pt-3">
+                <h2 class="product-details">
+                    sản phẩm liên quan
+                </h2>
+
+                <div class="home-btns mt-0">
+                    <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-share-resize">
+                    <div class="home-share-box-img position-relative">
+                        <div class="home-share-box-img-sale">
+                            50%
+                        </div>
+                        <div class="home-share-box-img-photo">
+                            <img src="~/ginseng/ginseng1.svg" />
+
+                        </div>
+                        <div class="home-share-box-buy-cart-icon d-flex">
+                            <img src="~/icon/buynow.svg" />
+                            <img src="~/icon/addcart.svg" />
+                        </div>
+                    </div>
+                    <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                    <div class="home-share-box-price d-flex justify-content-between">
+                        <div class="home-share-box-cost">
+                            <del>1,750,000 ₫</del>
+                        </div>
+                        <div class="home-share-box-promotional-price">875,000 ₫</div>
+                    </div>
+                    <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                </div>
+                <div class="home-share-resize">
+                    <div class="home-share-box-img position-relative">
+                        <div class="home-share-box-img-sale">
+                            50%
+                        </div>
+                        <div class="home-share-box-img-photo">
+                            <img src="~/ginseng/ginseng1.svg" />
+
+                        </div>
+                        <div class="home-share-box-buy-cart-icon d-flex">
+                            <img src="~/icon/buynow.svg" />
+                            <img src="~/icon/addcart.svg" />
+                        </div>
+                    </div>
+                    <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                    <div class="home-share-box-price d-flex justify-content-between">
+                        <div class="home-share-box-cost">
+                            <del>1,750,000 ₫</del>
+                        </div>
+                        <div class="home-share-box-promotional-price">875,000 ₫</div>
+                    </div>
+                    <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                </div>
+                <div class="home-share-resize">
+                    <div class="home-share-box-img position-relative">
+                        <div class="home-share-box-img-sale">
+                            50%
+                        </div>
+                        <div class="home-share-box-img-photo">
+                            <img src="~/ginseng/ginseng1.svg" />
+
+                        </div>
+                        <div class="home-share-box-buy-cart-icon d-flex">
+                            <img src="~/icon/buynow.svg" />
+                            <img src="~/icon/addcart.svg" />
+                        </div>
+                    </div>
+                    <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                    <div class="home-share-box-price d-flex justify-content-between">
+                        <div class="home-share-box-cost">
+                            <del>1,750,000 ₫</del>
+                        </div>
+                        <div class="home-share-box-promotional-price">875,000 ₫</div>
+                    </div>
+                    <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                </div>
+                <div class="home-share-resize">
+                    <div class="home-share-box-img position-relative">
+                        <div class="home-share-box-img-sale">
+                            50%
+                        </div>
+                        <div class="home-share-box-img-photo">
+                            <img src="~/ginseng/ginseng1.svg" />
+
+                        </div>
+                        <div class="home-share-box-buy-cart-icon d-flex">
+                            <img src="~/icon/buynow.svg" />
+                            <img src="~/icon/addcart.svg" />
+                        </div>
+                    </div>
+                    <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                    <div class="home-share-box-price d-flex justify-content-between">
+                        <div class="home-share-box-cost">
+                            <del>1,750,000 ₫</del>
+                        </div>
+                        <div class="home-share-box-promotional-price">875,000 ₫</div>
+                    </div>
+                    <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="~/js/productdetails.js"></script>

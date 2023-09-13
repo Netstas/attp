@@ -1,0 +1,106 @@
+﻿@model attp.Models.Product
+
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/css/elfinder.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/css/theme.min.css" />
+<div class="p-5">
+
+    <h4>Cập nhập lại sản phẩm</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="UpdateProduct">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="ProductName" class="control-label"></label>
+                    <input asp-for="ProductName" class="form-control" />
+                    <span asp-validation-for="ProductName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="image" class="control-label"></label>
+                    <div class="form-group">
+                        <div class="upload__box">
+                            <div class="upload__btn-box">
+                                <label asp-for="image" class="upload__btn">
+                                    <p>Upload images</p>
+                                    <input type="file" asp-for="image" multiple data-max_length="20" class="upload__inputfile">
+                                </label>
+                            </div>
+                            <div class="upload__img-wrap">
+                                @if (Model.image != null)
+                                {
+                                    var images = Model.image.Split(',');
+                                    foreach (var image in images)
+                                    {
+                                        var imageUrl = Url.Content("~/uploads/" + image);
+                                        <div class='upload__img-box'>
+                                            <div style='background-image: url(@imageUrl)' class='img-bg'>
+                                                <div class='upload__img-close'></div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <span asp-validation-for="image" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="quantity" class="control-label"></label>
+                    <input asp-for="quantity" class="form-control" />
+                    <span asp-validation-for="quantity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="discount" class="control-label"></label>
+                    <input asp-for="discount" class="form-control" />
+                    <span asp-validation-for="discount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="productcode" class="control-label"></label>
+                    <input asp-for="productcode" class="form-control" />
+                    <span asp-validation-for="productcode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProductDescription" class="control-label"></label>
+                    <textarea asp-for="ProductDescription" class="bg-white"></textarea>
+                    <span asp-validation-for="ProductDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProductCategoryId" class="control-label"></label>
+                    <label asp-for="ProductCategoryId" class="control-label"></label>
+                    <select asp-for="ProductCategoryId" asp-items="@(new SelectList(ViewBag.ProductCategories, "Id", "CategoryName"))" class="form-control">
+                        <option value="">Chọn danh mục</option>
+                    </select>
+                    <span asp-validation-for="ProductCategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PriceSale" class="control-label"></label>
+                    <input asp-for="PriceSale" class="form-control" />
+                    <span asp-validation-for="PriceSale" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Product">Quay lại</a>
+    </div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/elfinder/2.1.60/js/elfinder.min.js"></script>
+<script src="~/js/adminproduct.js"></script>

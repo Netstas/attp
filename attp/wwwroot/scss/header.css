@@ -1,0 +1,113 @@
+﻿.header-top {
+  background: #007740;
+  padding: 7px 0;
+}
+.header-top-left-email {
+  padding-right: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.header-top-left-email span {
+  font-weight: 500;
+}
+.header-top-left-phone {
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.header-top-left-phone span {
+  font-weight: 500;
+}
+.header-top-right-language-select {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.header-top-right-cloum {
+  color: #fff;
+  margin: 0 13px;
+  width: 2px;
+  height: auto;
+  background: #fff;
+}
+.header-bottom {
+  padding: 9px 0px;
+}
+.header-bottom-logo {
+  width: 100px;
+  height: 66px;
+}
+.header-bottom-logo-left {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-bottom-nav {
+  width: 70%;
+}
+.header-bottom-nav-item {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header-bottom-nav-item-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.header-bottom-cart {
+  text-align: -webkit-right;
+  width: 11%;
+  position: relative;
+}
+.header-bottom-cart-number {
+  position: absolute;
+  top: -14px;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  background: #E20000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.header-bottom-cart-link {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: block;
+  text-align: right;
+  height: 35px;
+  width: 125px;
+  padding: 6px 13px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #007740 0%, #70ae43 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+option {
+  color: #000;
+}
+
+.icon {
+  color: #007740;
+}

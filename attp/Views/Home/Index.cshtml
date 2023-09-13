@@ -1,0 +1,1327 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+<div class="home">
+    <div class="slider home-banner w-100 border-0">
+        <div>
+            <img src="~/banner/banner_1.svg" class="home-img" />
+        </div>
+        <div>
+            <img src="~/banner/banner_1.svg" class="home-img" />
+        </div>
+        <div>
+            <img src="~/banner/banner_1.svg" class="home-img" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="home-tab">
+        <div class="container">
+            <h2 class="home-title">Sản phẩm của chúng tôi</h2>
+
+            <ul class="nav nav-pills mb-3 home-pills-tab justify-content-center align-items-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link home-btn active" id="pills-propose-tab" data-bs-toggle="pill" data-bs-target="#pills-propose" type="button" role="tab" aria-controls="pills-propose" aria-selected="true">sản phẩm đề xuất</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link home-btn" id="pills-bestseller-tab" data-bs-toggle="pill" data-bs-target="#pills-bestseller" type="button" role="tab" aria-controls="pills-bestseller" aria-selected="false">Sản phẩm best seller</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link home-btn" id="pills-promotion-tab" data-bs-toggle="pill" data-bs-target="#pills-promotion" type="button" role="tab" aria-controls="pills-promotion" aria-selected="false">Sản phẩm khuyến mãi</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link home-btn" id="pills-detail-tab" data-bs-toggle="pill" data-bs-target="#pills-detail" type="button" role="tab" aria-controls="pills-detail" aria-selected="false">sản phẩm chi tiết</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-propose" role="tabpanel" aria-labelledby="pills-propose-tab">
+                    <div class="d-flex home-product-show">
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-1.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new">Mới</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-2.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new buy">Bán chạy</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Trẻ Em KGC Cheong Kwan Jang
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-3.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Tranh đá quý Phong cảnh Nước Ngoài mái nổi 9,800,000 ₫
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-4.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S End Of Year 2022 Limited Edition Gift Box
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-5.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S. Limited Edition by Felipe Pantone
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-bestseller" role="tabpanel" aria-labelledby="pills-bestseller-tab">
+                    <div class="d-flex home-product-show">
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-1.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new">Mới</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-2.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new buy">Bán chạy</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Trẻ Em KGC Cheong Kwan Jang
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-3.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Tranh đá quý Phong cảnh Nước Ngoài mái nổi 9,800,000 ₫
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-4.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S End Of Year 2022 Limited Edition Gift Box
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-5.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S. Limited Edition by Felipe Pantone
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-promotion" role="tabpanel" aria-labelledby="pills-promotion-tab">
+                    <div class="d-flex home-product-show">
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-1.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new">Mới</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-2.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new buy">Bán chạy</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Trẻ Em KGC Cheong Kwan Jang
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-3.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Tranh đá quý Phong cảnh Nước Ngoài mái nổi 9,800,000 ₫
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-4.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S End Of Year 2022 Limited Edition Gift Box
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-5.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S. Limited Edition by Felipe Pantone
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-detail" role="tabpanel" aria-labelledby="pills-detail-tab">
+                    <div class="d-flex home-product-show">
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-1.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new">Mới</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-2.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <div class="home-product-new buy">Bán chạy</div>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hồng Sâm Trẻ Em KGC Cheong Kwan Jang
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-3.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Tranh đá quý Phong cảnh Nước Ngoài mái nổi 9,800,000 ₫
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-4.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S End Of Year 2022 Limited Edition Gift Box
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="home-product">
+                            <div class="home-product-img">
+                                <a href="#">
+                                    <img src="~/product/product-5.svg" class="home-product-chill w-100 h-100" />
+                                </a>
+                            </div>
+                            <h3 class="home-product-title">
+                                <a href="#" class="text-black text-decoration-none">
+                                    Hennessy V.S. Limited Edition by Felipe Pantone
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-selling">
+        <div class="container">
+            <div class="row d-flex flex-column">
+                <h2 class="home-shared">
+                    best seller & yêu thích
+                </h2>
+                <div class="slider home-shared-slider w-100 border-0">
+                    <div class="resize">
+                        <div class="home-selling-box-img position-relative">
+                            <div class="home-selling-box-img-new">
+                                mới
+                            </div>
+                            <div class="home-selling-box-img-photo">
+                                <img src="~/bestseller/rectangle1.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-selling-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-selling-box-describe">
+                            Tinh chất hồng sâm KGC Everytime Balance được chiết xuất hoàn toàn từ tinh chất Hồng.
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="resize ">
+                        <div class="home-selling-box-img backgrouds position-relative">
+                            <div class="home-selling-box-img-new bgc-green">
+                                Bán chạy
+                            </div>
+                            <div class="home-selling-box-img-photo">
+                                <img src="~/bestseller/rectangle2.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-selling-box-title">Tranh đá quý Phong cảnh Nước Ngoài mái nổi</h3>
+                        <div class="home-selling-box-describe">
+                            Tranh đá quý phong cảnh nước ngoài luôn là những cảnh nhà tựa sơn hướng thủy.
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="resize">
+                        <div class="home-selling-box-img position-relative">
+                            <div class="home-selling-box-img-photo">
+                                <img src="~/bestseller/rectangle3.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-selling-box-title">Hennessy V.S End Of Year 2022 Limited Edition Gift Box</h3>
+                        <div class="home-selling-box-describe">
+                            Hennessy VS được sản xuất từ những loại nho tốt nhất tại khu vực Cognac, Pháp.
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="resize">
+                        <div class="home-selling-box-img backgrouds position-relative">
+                            <div class="home-selling-box-img-photo">
+                                <img src="~/bestseller/rectangle4.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-selling-box-title">Hennessy V.S. Limited Edition by Felipe Pantone</h3>
+                        <div class="home-selling-box-describe">
+                            Hennessy VS là một loại rượu Cognac được sản xuất tại Pháp, hương vị đậm đà và phong phú.
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="resize">
+                        <div class="home-selling-box-img position-relative">
+                            <div class="home-selling-box-img-photo">
+                                <img src="~/bestseller/rectangle1.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-selling-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-selling-box-describe">
+                            Tinh chất hồng sâm KGC Everytime Balance được chiết xuất hoàn toàn từ tinh chất Hồng.
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="home-share promotion">
+        <div class="container">
+            <div class="row">
+                <h2 class="home-shared">
+                    Sản phẩm KHUYẾN MÃI
+                </h2>
+
+                <div class="slider home-shared-slider w-100 border-0">
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/bestseller/rectangle1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/bestseller/rectangle2.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Tranh đá quý Phong cảnh Nước Ngoài mái nổi</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>4,900,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">9,800,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/bestseller/rectangle3.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hennessy V.S End Of Year 2022 Limited Edition Gift Box</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>550,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,100,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/bestseller/rectangle4.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Chivas Legend Special Reserve - 200 Years of Excellence</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>800,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,600,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/bestseller/rectangle1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="home-selling home-share promotion">
+        <div class="container">
+            <div class="row">
+                <h2 class="home-shared">
+                    Sản phẩm sâm
+                </h2>
+                <div class="slider home-shared-slider w-100 border-0">
+                    <div class="swiper-slide home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="swiper-slide home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng2.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Nhung hươu linh chi Nonghyup Korean Red Ginseng Eternity Q Plus</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>4,900,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">9,800,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="swiper-slide home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng3.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Nước Hồng Sâm Bio Apgold Korean Red Ginseng Giryeokbo</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>550,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,100,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="swiper-slide home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng4.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Trẻ Em KGC Cheong Kwan Jang (20ml x 30 gói)</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>800,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,600,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="swiper-slide home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/ginseng/ginseng1.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="home-share promotion">
+        <div class="container">
+            <div class="row">
+                <h2 class="home-shared">
+                    tranh đá quý
+                </h2>
+                <div class="slider home-shared-slider w-100 border-0">
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/gemstone/gemstone1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Tranh Cửu Ngư Quần Hội Bằng Đá Quý Có Đèn Led Mẫu Mới 2023</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/gemstone/gemstone2.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Tranh đá quý Phong cảnh Nước Ngoài mái nổi</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>4,900,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">9,800,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/gemstone/gemstone3.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Bộ 4 Tranh Đá Quý Bốn Mùa Xuân Hạ Thu Đông Mẫu Mới 2023</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>550,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,100,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/gemstone/gemstone4.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Tranh Cửu Ngư Quần Hội Bằng Đá Quý Có Đèn Led Mẫu Mới 2023</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>800,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,600,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/gemstone/gemstone1.svg" />
+
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hồng Sâm Pha Sẵn KGC Cheong Kwan Jang EveryTime Balance</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="home-selling home-share promotion">
+        <div class="container">
+            <div class="row">
+                <h2 class="home-shared">
+                    Sản phẩm rược
+                </h2>
+                <div class="slider home-shared-slider w-100 border-0">
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/alcohol/alcohol1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Chivas Legend Special Reserve - 200 Years of Excellence</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/alcohol/alcohol2.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Chivas Cask Strength Edition Strathisla 15 Years Old 1991</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>4,900,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">9,800,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/alcohol/alcohol3.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Hennessy V.S End Of Year 2022 Limited Edition Gift Box</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>550,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,100,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/alcohol/alcohol4.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Chivas Legend Special Reserve - 200 Years of Excellence</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>800,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">1,600,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                    <div class="home-share-resize">
+                        <div class="home-share-box-img position-relative">
+                            <div class="home-share-box-img-sale">
+                                50%
+                            </div>
+                            <div class="home-share-box-img-photo">
+                                <img src="~/alcohol/alcohol1.svg" />
+                            </div>
+                            <div class="home-share-box-buy-cart-icon d-flex">
+                                <img src="~/icon/buynow.svg" />
+                                <img src="~/icon/addcart.svg" />
+                            </div>
+                        </div>
+                        <h3 class="home-share-box-title">Chivas Legend Special Reserve - 200 Years of Excellence</h3>
+                        <div class="home-share-box-price d-flex justify-content-between">
+                            <div class="home-share-box-cost">
+                                <del>1,750,000 ₫</del>
+                            </div>
+                            <div class="home-share-box-promotional-price">875,000 ₫</div>
+                        </div>
+                        <a href="#" class="home-selling-box-btn text-decoration-none">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="home-news">
+        <div class="container">
+            <div class="row">
+                <div class="home-news-top">
+                    <h3 class="home-news-top-title">Tin tức</h3>
+                    <ul class="nav nav-tabs home-news-border align-items-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home-news-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tất cả</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home-news-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Doanh Nghiệp</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home-btnr border-end-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Tổng hợp</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <div class="home-btns m-0">
+                                <a href="#" class="home-btn-links"> Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brick"></div>
+                <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news1.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news2.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="home-related-news d-flex flex-column">
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news3.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news4.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news5.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news6.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news1.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news2.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="home-related-news d-flex flex-column">
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news3.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news4.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news5.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news6.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news1.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 home-split">
+                                        <div class="home-main-news">
+                                            <div class="home-main-news-box">
+                                                <div class="home-main-news-photo">
+                                                    <img src="~/news/news2.svg" />
+                                                    <div class="home-main-news-date"> <i class="fa-regular fa-calendar-days"></i> 04/08/2023</div>
+                                                </div>
+                                                <h2 class="home-main-news-title">
+                                                    Tổng hợp 10 loại sâm quý phổ biến được trồng ở Việt Nam
+                                                </h2>
+                                                <p class="home-main-news-describe">
+                                                    Theo Đông Y, sâm là một trong những bài thuốc quý, giúp hỗ trợ
+                                                    trong việc điều trị bệnh. Hôm nay An Toàn Thực Phẩm sẽ giới thiệu bạn 10.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="home-related-news d-flex flex-column">
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news3.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news4.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news5.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home-related-news-text-photo d-flex">
+                                        <div class="home-related-news-photo">
+                                            <img src="~/news/news6.svg" />
+                                        </div>
+                                        <div class="home-related-news-text">
+                                            <h4 class="home-related-news-title">
+                                                <a href="#" class="text-decoration-none text-black">
+                                                    Top 10 thương hiệu rượu ngoại nổi tiếng được ưa chuộng tại Việt Nam
+                                                </a>
+                                            </h4>
+                                            <p class="home-related-news-text-p">
+                                                Rượu cũng có nhiều loại phân cấp và độ cồn theo mức năm chưng cất khác nhau. Rượu không phải đơn thuần.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-about bgc">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="accordion-container">
+                        <h2 class="accordion-container-title">vì sao chọn chúng tôi?</h2>
+                        <div class="set">
+                            <a class="text-decoration-none">
+                                <i class="fa fa-plus home-about-icon"></i>
+                                Chất lượng sản phẩm luôn được ưu tiên hàng đầu
+                            </a>
+                            <div class="content">
+                                <p>
+                                    Trước khi đến được tay người tiêu dùng, các sản phẩm đã phải trải qua hàng loạt những quy trình kiểm định và xét nghiệm khắt khe. Ngoài ra chúng tôi cũng có giấy xét nghiệm hàm lượng dinh dưỡng cho từng đầu mục sản phẩm.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <a class="text-decoration-none">
+                                <i class="fa fa-plus home-about-icon"></i>
+                                Đội ngũ giáo sư, tiến sỹ, y bác sỹ đầu ngành
+                            </a>
+                            <div class="content">
+                                <p>
+                                    Trước khi đến được tay người tiêu dùng, các sản phẩm đã phải trải qua hàng loạt những quy trình kiểm định và xét nghiệm khắt khe. Ngoài ra chúng tôi cũng có giấy xét nghiệm hàm lượng dinh dưỡng cho từng đầu mục sản phẩm.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <a class="text-decoration-none">
+                                <i class="fa fa-plus home-about-icon"></i>
+                                Bảo vệ môi trường
+                            </a>
+                            <div class="content">
+                                <p>
+                                    Trước khi đến được tay người tiêu dùng, các sản phẩm đã phải trải qua hàng loạt những quy trình kiểm định và xét nghiệm khắt khe. Ngoài ra chúng tôi cũng có giấy xét nghiệm hàm lượng dinh dưỡng cho từng đầu mục sản phẩm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="home-about-photo">
+                        <img src="~/img/other1.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="~/js/accordion.js"></script>
+
+<script>
+    $('.home-shared-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        dots: false,
+    });
+    $('.home-banner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: true,
+        dots: true,
+    });
+
+</script>

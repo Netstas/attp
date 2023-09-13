@@ -1,0 +1,99 @@
+﻿<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="header-top-left col-6">
+                    <div class="d-flex justify-content-start text-white">
+                        <div class="header-top-left-email"><span> Email: </span>attp@attp.com.vn </div>
+                        <div class="header-top-left-phone"><span> Hotline:</span> 0123.456.789</div>
+                    </div>
+                </div>
+                <div class="header-top-right col-6">
+                    <div class="d-flex justify-content-end">
+                        <div class="header-top-right-language d-flex">
+                            <label for="floatingSelect">
+                                <img src="~/icon/earth.svg" />
+                            </label>
+                            <select class="header-top-right-language-select">
+                                <option selected>Vn</option>
+                                <option><i class="bi bi-flag"></i> EN</option>
+                            </select>
+                        </div>
+                        <div class="header-top-right-cloum"></div>
+                        <div class="header-top-right-auth text-white">
+                            <img src="~/icon/login.svg" />
+                            <a href="#" class="text-decoration-none text-white">Đăng ký</a>/
+                            <a href="#" class="text-decoration-none text-white">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="header-bottom-logo p-0">
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="~/logo/logo_1_png.svg" class="header-bottom-logo-left" />
+                    </a>
+                </div>
+                <nav class="header-bottom-nav ">
+                    <ul class="header-bottom-nav-menu list-unstyled d-flex mb-0 justify-content-between">
+                        <li class="header-bottom-nav-item">
+                            <a asp-action="Index" asp-controller="Introduce" class="text-black text-decoration-none">
+                                Về chúng tôi
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+
+                            <a asp-action="Index" asp-controller="Product" class="text-black text-decoration-none">
+                                Sâm
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            <a class="text-black text-decoration-none">
+                                Tranh đá quý
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            Rược
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            <a class="text-black text-decoration-none">
+                                Khuyến mãi
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            <a class="text-black text-decoration-none">
+                                Chính sách
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            <a class="text-black text-decoration-none">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item">
+                            <a class="text-black text-decoration-none">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="header-bottom-nav-item ">
+                            <button class="header-bottom-nav-item-btn">
+                                <i class="fa-solid fa-magnifying-glass icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-bottom-cart">
+                    <a asp-action="Index" asp-controller="Cart" class="header-bottom-cart-link text-decoration-none text-white">
+                        <img src="~/icon/cart.svg" />
+                        giỏ hàng
+                    </a>
+                    <span class="header-bottom-cart-number">2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

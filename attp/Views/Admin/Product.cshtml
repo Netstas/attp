@@ -1,0 +1,87 @@
+﻿@model IEnumerable<attp.Models.Product>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@{
+    ViewData["Title"] = "Product";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    int pageSizes = 5;
+}
+
+<div class="pl-3 pr-3 pt-4">
+    <p>
+        <a asp-action="CreateProduct">Thêm mới sản phẩm</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.image)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.discount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productcode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductCategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Products)
+            {
+                var images = item.Product.image.Split(',');
+                var firstImage = images[0].Trim();
+
+                <tr>
+                    <td>
+                        @item.Product.ProductName
+                    </td>
+                    <td>
+                        <img src="~/uploads/@firstImage" width="50" height="50" alt="Product Image" class="image">
+                    </td>
+                    <td>
+                        @item.Product.quantity
+                    </td>
+                    <td>
+                        @item.Product.discount
+                    </td>
+                    <td>
+                        @item.Product.productcode
+                    </td>
+                    <td>
+                        @item.Product.ProductDescription
+                    </td>
+                    <td>
+                        @item.CategoryName
+                    </td>
+                    <td>
+                        @item.Product.Price
+                    </td>
+                    <td>
+                        <a asp-action="UpdateProduct" asp-route-id="@item.Product.Id">Cập nhập</a> |
+                        <a asp-action="DeleteProduct" asp-route-id="@item.Product.Id">Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="text-center">
+        @Html.PagedListPager((IPagedList) ViewBag.Products, page=>Url.Action("Product",new{page}))
+    </div>
+
+</div>
